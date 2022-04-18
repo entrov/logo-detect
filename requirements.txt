@@ -6,3 +6,6 @@ opencv-python
 imutils
 djangorestframework
 scikit-image
+gunicorn
+psycopg2-binary
+dj-database-url
