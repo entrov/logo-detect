@@ -82,7 +82,7 @@ if os.getenv("DATABASE_URL","") != "":
     r = urlparse(os.environ.get("DATABASE_URL"))
     DATABASES = {
         "default": {
-            "ENGINE": django.db.backends.postgresql_psycopg2",
+            "ENGINE": "django.db.backends.postgresql_psycopg2",
             "NAME": os.pathrelpath(r.path,"/"),
             "USER": r.username,
             "PASSWORD": r.password
