@@ -13,7 +13,6 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 from pathlib import Path
 import os
 from django.core.management.utils import get_random_secret_key
-from urlib.parse import urlparse
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -78,26 +77,12 @@ WSGI_APPLICATION = 'logo_detect_api.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
-if os.getenv("DATABASE_URL","") != "":
-    r = urlparse(os.environ.get("DATABASE_URL"))
-    DATABASES = {
-        "default": {
-            "ENGINE": "django.db.backends.postgresql_psycopg2",
-            "NAME": os.pathrelpath(r.path,"/"),
-            "USER": r.username,
-            "PASSWORD": r.password,
-            "HOST": r.hostname,
-            "PORT": r.port,
-            "OPTIONS": {"sslmode": "require"},
-        }
-    }
-else: 
-    DATABASES = {
+DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
             'NAME': BASE_DIR / 'db.sqlite3',
          }
-    }   
+}   
 
 
 # Password validation
