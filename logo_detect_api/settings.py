@@ -85,7 +85,7 @@ if os.getenv("DATABASE_URL","") != "":
             "ENGINE": "django.db.backends.postgresql_psycopg2",
             "NAME": os.pathrelpath(r.path,"/"),
             "USER": r.username,
-            "PASSWORD": r.password
+            "PASSWORD": r.password,
             "HOST": r.hostname,
             "PORT": r.port,
             "OPTIONS": {"sslmode": "require"},
