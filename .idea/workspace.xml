@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12c46c7a-1aae-4364-91dd-100911d8240d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoint_dir/checkpoint" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoint_dir/model.ckpt.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoint_dir/model.ckpt.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoint_dir/model.ckpt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf_models/logo.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf_models/logo.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf_models/logo_test.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf_models/logo_test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/inception/classify_image_graph_def.pb" beforeDir="false" afterPath="$PROJECT_DIR$/train/inception/classify_image_graph_def.pb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +74,7 @@
       <workItem from="1650491682223" duration="2447000" />
       <workItem from="1650535315929" duration="5170000" />
       <workItem from="1650818469251" duration="2031000" />
+      <workItem from="1650825678269" duration="1958000" />
     </task>
     <servers />
   </component>
@@ -81,5 +91,26 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/client.py</url>
+          <line>173</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/client.py</url>
+          <line>62</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/client.py</url>
+          <line>193</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
