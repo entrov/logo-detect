@@ -11,7 +11,14 @@ WHOAMI=`whoami`
 sudo apt update -y
 sudo apt upgrade -y
 sudo apt install -y python3-pip python3-dev python3.8-venv libjpeg8-dev libpng-dev libfreetype6-dev nginx
-sudo apt install git curl 
+sudo apt install -y git curl
+
+git config --global user.name "fiver-dev-entrov"
+git config --global user.email "fiverr-dev@entrov.com"
+git checkout production
+git lfs pull & fetch
+git pull & fetch
+
 
 # 2. create virtual_environment
 echo 'setup virtualenv'
