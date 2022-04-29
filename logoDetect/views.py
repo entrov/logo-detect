@@ -9,6 +9,10 @@ from rest_framework.response import Response
 import client
 from rest_framework.throttling import UserRateThrottle, AnonRateThrottle
 
+import logging
+# Get an instance of a logger
+logger = logging.getLogger(__name__)
+
 
 class LogoSerializer(serializers.Serializer):
     image = serializers.ImageField()
@@ -34,8 +38,12 @@ class LogoDetectView(GenericAPIView):
         serializer = self.get_serializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         image = serializer.validated_data.get('image')
-        response = client.get_logo_image_clssify(image)
-        return Response(response, status=status.HTTP_200_OK)
+        try:
+            response = client.get_logo_image_clssify(image)
+            return Response(response, status=status.HTTP_200_OK)
+        except Exception as e:
+            print(e)
+            return Response({}, status=status.HTTP_200_OK)
 
 class LogoURLDetectView(GenericAPIView):
     permission_classes = [permissions.AllowAny]
