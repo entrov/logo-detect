@@ -9,3 +9,4 @@ scikit-image
 gunicorn
 psycopg2-binary
 dj-database-url
+boto3
