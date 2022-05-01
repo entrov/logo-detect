@@ -15,7 +15,7 @@ sudo apt install -y git curl
 
 git config --global user.name "fiver-dev-entrov"
 git config --global user.email "fiverr-dev@entrov.com"
-git checkout production
+git checkout main
 git lfs pull & fetch
 git pull & fetch
 
