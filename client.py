@@ -248,10 +248,10 @@ def train_model(how_many_training_steps, testing_percentage, learning_rate, dele
     random_brightness = 0
     model_dir = f"train/inception"
     checkpoint_directory = f"checkpoint_dir"
-    update_dataset = True
+    # update_dataset = True
 
-    update_dataset = download_dataset(update_dataset)
-    print(update_dataset)
+    # update_dataset = download_dataset(update_dataset)
+    # print(update_dataset)
 
     response = retrain_logo.main(image_dir, output_graph, output_labels, summaries_dir, how_many_training_steps, testing_percentage, validation_percentage, 
           eval_step_interval, train_batch_size, test_batch_size, validation_batch_size, bottleneck_dir, final_tensor_name, flip_left_right,
