@@ -1,7 +1,8 @@
 django
 numpy
 Pillow
-tensorflow-gpu
+tensorflow
+tensorflow-cpu
 opencv-python
 imutils
 djangorestframework
