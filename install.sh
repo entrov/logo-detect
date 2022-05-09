@@ -65,7 +65,7 @@ User=$WHOAMI
 Group=www-data
 
 WorkingDirectory=$WorkingDirectory/
-ExecStart=$WorkingDirectory/$ENV_NAME/bin/gunicorn --access-logfile $WorkingDirectory/log/access_file_g.log --error-logfile $WorkingDirectory/log/error_file_g.log --capture-output --enable-stdio-inheritance  --workers 1 --max-requests 1 --bind unix:/run/logodetect.sock logo_detect_api.wsgi:application
+ExecStart=$WorkingDirectory/$ENV_NAME/bin/gunicorn --access-logfile $WorkingDirectory/log/access_file_g.log --error-logfile $WorkingDirectory/log/error_file_g.log --capture-output --enable-stdio-inheritance  --workers 3 --max-requests 2 --bind unix:/run/logodetect.sock logo_detect_api.wsgi:application
 
 [Install]
 WantedBy=multi-user.target
