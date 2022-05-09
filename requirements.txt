@@ -1,7 +1,6 @@
 django
 numpy
 Pillow
-tensorflow
 tensorflow-cpu
 opencv-python
 imutils
