@@ -169,5 +169,11 @@ LOGGING = {
         }
     },
 }
-CELERY_BROKER_URL = 'amqp://localhost'
+#CELERY_BROKER_URL = 'amqp://localhost'
 CELERY_worker_hijack_root_logger=False
+CELERY_BROKER_URL = 'amqp://localhost'
+CELERY_RESULT_BACKEND = 'rpc://'
+CELERY_RESULT_PERSISTENT = False
+CELERY_ACCEPT_CONTENT = ['application/json']
+CELERY_TASK_SERIALIZER = 'json'
+CELERY_RESULT_SERIALIZER = 'json'
