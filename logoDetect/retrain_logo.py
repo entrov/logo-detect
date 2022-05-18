@@ -3,6 +3,7 @@ from __future__ import division
 from __future__ import print_function
 
 import argparse
+import logging
 from datetime import datetime
 import hashlib
 import os.path
@@ -37,7 +38,8 @@ MODEL_INPUT_DEPTH = 3
 JPEG_DATA_TENSOR_NAME = 'DecodeJpeg/contents:0'
 RESIZED_INPUT_TENSOR_NAME = 'ResizeBilinear:0'
 MAX_NUM_IMAGES_PER_CLASS = 2 ** 27 - 1  # ~134M
-        
+logger = logging.getLogger('celery')
+
 
 
 def create_image_lists(image_dir, testing_percentage, validation_percentage):
@@ -836,8 +838,9 @@ def main(image_dir, output_graph, output_labels, summaries_dir, how_many_trainin
                      ground_truth_input: train_ground_truth})
       print('%s: Step %d: Train accuracy = %.1f%%' % (datetime.now(), i,
                                                       train_accuracy * 100))
-      print('%s: Step %d: Cross entropy = %f' % (datetime.now(), i,
-                                                 cross_entropy_value))
+      logger.info('%s: Step %d: Train accuracy = %.1f%%' % (datetime.now(), i,train_accuracy * 100))
+      print('%s: Step %d: Cross entropy = %f' % (datetime.now(), i,cross_entropy_value))
+      logger.info('%s: Step %d: Cross entropy = %f' % (datetime.now(), i,cross_entropy_value))
       validation_bottlenecks, validation_ground_truth, _ = (
           get_random_cached_bottlenecks(
               sess, image_lists, validation_batch_size, 'validation',
@@ -853,8 +856,10 @@ def main(image_dir, output_graph, output_labels, summaries_dir, how_many_trainin
       print('%s: Step %d: Validation accuracy = %.1f%% (N=%d)' %
             (datetime.now(), i, validation_accuracy * 100,
              len(validation_bottlenecks)))
+      logger.info('%s: Step %d: Validation accuracy = %.1f%% (N=%d)' %(datetime.now(), i, validation_accuracy * 100,len(validation_bottlenecks)))
+
       shutil.rmtree(checkpoint_directory)
-      
+
       if not os.path.exists(checkpoint_directory):
         os.makedirs(checkpoint_directory)
 
@@ -900,10 +905,12 @@ def main(image_dir, output_graph, output_labels, summaries_dir, how_many_trainin
       [evaluation_step, prediction],
       feed_dict={bottleneck_input: test_bottlenecks,
                 ground_truth_input: test_ground_truth})
-  
+
 
   print('Final test accuracy = %.1f%% (N=%d)' % (
       test_accuracy * 100, len(test_bottlenecks)))
+  logger.info('Final test accuracy = %.1f%% (N=%d)' % (test_accuracy * 100, len(test_bottlenecks)))
+
   with open('train/result.txt', 'a') as file:
     print('Final test accuracy = %.1f%% (N=%d)' % (test_accuracy * 100, len(test_bottlenecks)), file=file)
 
@@ -925,7 +932,7 @@ def main(image_dir, output_graph, output_labels, summaries_dir, how_many_trainin
     f.write(output_graph_def.SerializeToString())
   with gfile.GFile(output_labels, 'w') as f:
     f.write('\n'.join(image_lists.keys()) + '\n')
-  
+
   # sess.close()
   tf.compat.v1.reset_default_graph()
 
