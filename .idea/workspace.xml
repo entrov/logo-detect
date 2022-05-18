@@ -2,28 +2,487 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12c46c7a-1aae-4364-91dd-100911d8240d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/logoDetect/task_list.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checkpoint_dir/model.ckpt.data-00000-of-00001" beforeDir="false" afterPath="$PROJECT_DIR$/checkpoint_dir/model.ckpt.data-00000-of-00001" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checkpoint_dir/model.ckpt.index" beforeDir="false" afterPath="$PROJECT_DIR$/checkpoint_dir/model.ckpt.index" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checkpoint_dir/model.ckpt.meta" beforeDir="false" afterPath="$PROJECT_DIR$/checkpoint_dir/model.ckpt.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/client.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/install.sh" beforeDir="false" afterPath="$PROJECT_DIR$/install.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logoDetect/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/logo_detect_api/celery.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logoDetect/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/logoDetect/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logoDetect/retrain_logo.py" beforeDir="false" afterPath="$PROJECT_DIR$/logoDetect/retrain_logo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logoDetect/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/logoDetect/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logoDetect/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/logoDetect/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logo_detect_api/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/logo_detect_api/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logo_detect_api/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/logo_detect_api/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tf_models/logo.pb" beforeDir="false" afterPath="$PROJECT_DIR$/tf_models/logo.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tf_models/logo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tf_models/logo.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tf_models/logo_test.pb" beforeDir="false" afterPath="$PROJECT_DIR$/tf_models/logo_test.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tf_models/logo_test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tf_models/logo_test.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/train/result.txt" beforeDir="false" afterPath="$PROJECT_DIR$/train/result.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/train/retrain_logs/train/events.out.tfevents.1650641489.ubuntu-s-1vcpu-1gb-intel-nyc1-logo-detect" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/train/retrain_logs/validation/events.out.tfevents.1650641495.ubuntu-s-1vcpu-1gb-intel-nyc1-logo-detect" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/AWS/1640205885683.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/AWS/AWS Deloitte 600x250.21f68920150df1bec7ab880d5b11030f63f945f8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/AWS/AWS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/AWS/download-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/AWS/download-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/AWS/download-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/AWS/download-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/AWS/download-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/AWS/download.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/AWS/images-1-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/AWS/images-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/AWS/images-2-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/AWS/images-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/AWS/images.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Accenture/1628018657141.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Accenture/Acc_GT_Dimensional_RGB.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Accenture/Acc_Logo_Black_Purple_RGB.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Accenture/download-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Accenture/download-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Accenture/download-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Accenture/download-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Accenture/download-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Accenture/download-6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Accenture/download.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Accenture/images-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Accenture/images-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Accenture/images.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Amazon/1612205615891.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Amazon/Amazon-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Amazon/download.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Amazon/images-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Amazon/images-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Amazon/images.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Andela/1648641306468.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Andela/AND-Logo-Lockup-Green-Black-RGB.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Andela/AND-Logo-Lockup-White-RGB-300x79.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Andela/Visual-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Andela/download-1-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Andela/download-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Andela/download-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Andela/download-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Andela/download.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Azure/1200px-Microsoft_Azure.svg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Azure/azure-svg-logo-.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Azure/azurelogo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Azure/download-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Azure/download-10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Azure/download-11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Azure/download-12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Azure/download-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Azure/download-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Azure/download-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Azure/download-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Azure/download-6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Azure/download-7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Azure/download-8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Azure/download-9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Azure/download.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Azure/images-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Azure/images-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Azure/images-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Azure/images.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/DBTLabs/download-1-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/DBTLabs/download-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/DBTLabs/download-2-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/DBTLabs/download-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/DBTLabs/download-3-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/DBTLabs/download-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/DBTLabs/download-4-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/DBTLabs/download-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/DBTLabs/download-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/DBTLabs/download.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/DBTLabs/images-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/DBTLabs/images-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Databricks/1625163879471.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Databricks/619194a1aaba4d7b6bd38520_6133a0b56761de70d6829128_fivetran-databricks-connector-p-500.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Databricks/download-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Databricks/download-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Databricks/download-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Databricks/download-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Databricks/download.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Deloitte/AWS Deloitte 600x250.21f68920150df1bec7ab880d5b11030f63f945f8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Deloitte/deloitte.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Deloitte/download-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Deloitte/download-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Deloitte/download-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Deloitte/download-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Deloitte/download-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Deloitte/download-6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Deloitte/download-7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Deloitte/download.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Firefly Health/1605131845710.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Firefly Health/5f919342cc3bde48f5c1ee49_Firefly_dark_logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Firefly Health/download-1-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Firefly Health/download-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Firefly Health/download-2-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Firefly Health/download-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Firefly Health/download-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Firefly Health/download-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Firefly Health/download-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Firefly Health/download-6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Firefly Health/download.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Firefly Health/images.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Fivetran/619194a1aaba4d7b6bd38520_6133a0b56761de70d6829128_fivetran-databricks-connector-p-500.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Fivetran/61d785fabffa4414529fb1b5_20211119_BCF on Azure Launch_BlogCard@2x-p-500.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Fivetran/download-1-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Fivetran/download-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Fivetran/download-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Fivetran/download-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Fivetran/download.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/GCP/download-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/GCP/download-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/GCP/download-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/GCP/download-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/GCP/download-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/GCP/download-7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/GCP/download-8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/GCP/download-9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/GCP/download.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/GCP/images-1-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/GCP/images-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/GCP/images-2-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/GCP/images-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/GCP/images-3-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/GCP/images-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/GCP/images-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/GCP/images-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/GCP/images-6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/GCP/images.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Gitlab/download-1-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Gitlab/download-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Gitlab/download-2-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Gitlab/download-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Gitlab/download-3-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Gitlab/download-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Gitlab/download-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Gitlab/download.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Gitlab/images-1-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Gitlab/images-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Gitlab/images-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Gitlab/images-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Gitlab/images-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Gitlab/images-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Gitlab/images.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Hubspot/619195da3a8d5a5b6006a537_6133a0636f48620cf12012f8_40ed5359-4e18-496a-b5bf-11645661db32-p-500.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Hubspot/download-1-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Hubspot/download-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Hubspot/download-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Hubspot/download-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Hubspot/download-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Hubspot/download.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Hubspot/images.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Looker/download-1-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Looker/download-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Looker/download-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Looker/download-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Looker/download-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Looker/download-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Looker/download-6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Looker/download-7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Looker/download-8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Looker/download.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Looker/images-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Looker/images-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Looker/images-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Looker/images.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Microsoft/download-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Microsoft/download-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Microsoft/download-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Microsoft/download-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Microsoft/download-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Microsoft/download-6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Microsoft/download.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Nvidia/1561949205873.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Nvidia/download-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Nvidia/download-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Nvidia/download-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Nvidia/download-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Nvidia/download-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Nvidia/download-6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Nvidia/download-7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Nvidia/download-8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Nvidia/download.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Onica/download-1-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Onica/download-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Onica/download-10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Onica/download-2-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Onica/download-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Onica/download-3-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Onica/download-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Onica/download-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Onica/download-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Onica/download-6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Onica/download-7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Onica/download-8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Onica/download-9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Onica/download.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Onica/images.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Pariveda/Pariveda-Website-_Pariveda Logo (5).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Pariveda/download copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Pariveda/download-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Pariveda/download-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Pariveda/download.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Pariveda/servlet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Rackspace/download-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Rackspace/download-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Rackspace/download-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Rackspace/download-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Rackspace/download-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Rackspace/download.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Rackspace/images copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Rackspace/images.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Salesforce/download-1 copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Salesforce/download-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Salesforce/download-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Salesforce/download-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Salesforce/download-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Salesforce/download-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Salesforce/download.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Salesforce/images-1-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Salesforce/images-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Salesforce/images-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Salesforce/images-3-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Salesforce/images-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Salesforce/images-4-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Salesforce/images-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Salesforce/images-5-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Salesforce/images-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Salesforce/images-6-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Salesforce/images-6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Salesforce/images-7-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Salesforce/images-7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Salesforce/images-8-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Salesforce/images-8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Salesforce/images.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Samsung/download-1-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Samsung/download-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Samsung/download-10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Samsung/download-11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Samsung/download-12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Samsung/download-13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Samsung/download-14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Samsung/download-15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Samsung/download-16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Samsung/download-17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Samsung/download-18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Samsung/download-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Samsung/download-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Samsung/download-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Samsung/download-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Samsung/download-6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Samsung/download-7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Samsung/download-8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Samsung/download-9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Samsung/download.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Samsung/images.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Slalom/1625149136034.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Slalom/download-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Slalom/download-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Slalom/download-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Slalom/download-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Slalom/download-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Slalom/download-6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Slalom/download-7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Slalom/download-8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Slalom/download.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Slalom/images.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Snowflake/download copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Snowflake/download-1-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Snowflake/download-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Snowflake/download-2-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Snowflake/download-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Snowflake/download-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Snowflake/download-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Snowflake/download-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Snowflake/download-6-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Snowflake/download-6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Snowflake/download-7-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Snowflake/download-7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Snowflake/download-8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Snowflake/download.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Snowflake/images-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Snowflake/images-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Snowflake/images-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Snowflake/images-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/Snowflake/images.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/appdynamics/AppDynamics.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/appdynamics/download-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/appdynamics/download-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/appdynamics/download-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/appdynamics/download-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/appdynamics/download-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/appdynamics/download-6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/appdynamics/download-7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/appdynamics/download.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/appdynamics/images-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/appdynamics/images-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/appdynamics/images-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/appdynamics/images.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/asana/download-1-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/asana/download-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/asana/download-2-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/asana/download-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/asana/download-3-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/asana/download-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/asana/download-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/asana/download-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/asana/download-6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/asana/download-7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/asana/download-8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/asana/download-9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/asana/download.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/asana/images-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/asana/images.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/avanade/download-1-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/avanade/download-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/avanade/download-2-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/avanade/download-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/avanade/download-3-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/avanade/download-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/avanade/download-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/avanade/download-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/avanade/download-6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/avanade/download-7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/avanade/download.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/canva/download-1-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/canva/download-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/canva/download-2-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/canva/download-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/canva/download-3-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/canva/download-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/canva/download-4-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/canva/download-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/canva/download-5-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/canva/download-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/canva/download-6-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/canva/download-6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/canva/download-7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/canva/download-8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/canva/download.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/canva/images-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/canva/images.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/capgemini/download-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/capgemini/download-2-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/capgemini/download-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/capgemini/download-3-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/capgemini/download-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/capgemini/download-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/capgemini/download-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/capgemini/download-6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/capgemini/download-7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/capgemini/download.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/capgemini/images-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/capgemini/images-2-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/capgemini/images.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/comcast/download-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/comcast/download-10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/comcast/download-11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/comcast/download-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/comcast/download-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/comcast/download-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/comcast/download-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/comcast/download-6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/comcast/download-7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/comcast/download-8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/comcast/download-9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/comcast/download.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/comcast/images-1-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/comcast/images-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/comcast/images-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/comcast/images.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/datadog/download-1-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/datadog/download-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/datadog/download-2-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/datadog/download-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/datadog/download-3-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/datadog/download-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/datadog/download-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/datadog/download-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/datadog/download.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/datadog/images.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/lenovo/download-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/lenovo/download-10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/lenovo/download-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/lenovo/download-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/lenovo/download-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/lenovo/download-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/lenovo/download-6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/lenovo/download-7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/lenovo/download-8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/lenovo/download-9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/lenovo/download.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/lenovo/images-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/lenovo/images-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/lenovo/images-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/lenovo/images.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/nasdaq/download-1-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/nasdaq/download-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/nasdaq/download-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/nasdaq/download-3-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/nasdaq/download-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/nasdaq/download-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/nasdaq/download-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/nasdaq/download-6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/nasdaq/download-7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/nasdaq/download-8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/nasdaq/download.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/nasdaq/images copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/nasdaq/images-1-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/nasdaq/images-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/nasdaq/images-2-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/nasdaq/images-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/nasdaq/images-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/nasdaq/images-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/nasdaq/images-6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/nasdaq/images.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/shell/download-1-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/shell/download-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/shell/download-2-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/shell/download-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/shell/download-3-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/shell/download-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/shell/download-4-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/shell/download-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/shell/download-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/shell/download-6-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/shell/download-6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/shell/download-7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/shell/download.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/shell/images-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/sofi/download-1-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/sofi/download-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/sofi/download-10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/sofi/download-2-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/sofi/download-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/sofi/download-3-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/sofi/download-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/sofi/download-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/sofi/download-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/sofi/download-6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/sofi/download-7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/sofi/download-8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/sofi/download-9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/sofi/download.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/sofi/images copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/sofi/images-1-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/sofi/images-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/sofi/images-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/sofi/images.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/twilio/download-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/twilio/download-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/twilio/download-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/twilio/download-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/twilio/download-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/twilio/download-6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/twilio/download-7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/twilio/download.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/twilio/images copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/twilio/images-1-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/twilio/images-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/twilio/images-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/twilio/images-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/twilio/images-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/twilio/images.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/whole foods/download copy 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/whole foods/download copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/whole foods/download-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/whole foods/download-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/whole foods/download-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/whole foods/download.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/whole foods/images-1-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/whole foods/images-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/whole foods/images-2-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/whole foods/images-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/dataset/whole foods/images.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +586,7 @@
       <workItem from="1652463638966" duration="816000" />
       <workItem from="1652684708616" duration="5000" />
       <workItem from="1652855912634" duration="162000" />
-      <workItem from="1652856094803" duration="86000" />
+      <workItem from="1652856094803" duration="462000" />
     </task>
     <servers />
   </component>
@@ -150,27 +609,27 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/client.py</url>
-          <line>173</line>
+          <line>175</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/client.py</url>
-          <line>62</line>
+          <line>64</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/client.py</url>
-          <line>193</line>
+          <line>195</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/logoDetect/views.py</url>
-          <line>84</line>
+          <line>97</line>
           <option name="timeStamp" value="43" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/logoDetect/views.py</url>
-          <line>82</line>
+          <line>95</line>
           <option name="timeStamp" value="44" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">

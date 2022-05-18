@@ -8,4 +8,5 @@ urlpatterns = [
     path('train_model/', views.TrainModelView.as_view(), name='trainmodel'),
     path('celery_train_model/', views.CeleryTestTask.as_view(), name='celery_trainmodel'),
     path('check_status/', views.CheckTask.as_view(), name='celery_trainmodel_status'),
+    path('update_dataset/', views.UpdateDatasetView.as_view(), name='updatedataset'),
 ]

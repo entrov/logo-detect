@@ -11,7 +11,14 @@ WHOAMI=`whoami`
 sudo apt update -y
 sudo apt upgrade -y
 sudo apt install -y python3-pip python3-dev python3.8-venv libjpeg8-dev libpng-dev libfreetype6-dev nginx
-sudo apt install git curl 
+sudo apt install -y git curl
+
+git config --global user.name "fiver-dev-entrov"
+git config --global user.email "fiverr-dev@entrov.com"
+git checkout production
+git lfs pull & fetch
+git pull & fetch
+
 
 # 2. create virtual_environment
 echo 'setup virtualenv'
@@ -58,7 +65,7 @@ User=$WHOAMI
 Group=www-data
 
 WorkingDirectory=$WorkingDirectory/
-ExecStart=$WorkingDirectory/$ENV_NAME/bin/gunicorn --access-logfile $WorkingDirectory/log/access_file_g.log --error-logfile $WorkingDirectory/log/error_file_g.log --capture-output --enable-stdio-inheritance  --workers 1 --max-requests 1 --bind unix:/run/logodetect.sock logo_detect_api.wsgi:application
+ExecStart=$WorkingDirectory/$ENV_NAME/bin/gunicorn --access-logfile $WorkingDirectory/log/access_file_g.log --error-logfile $WorkingDirectory/log/error_file_g.log --capture-output --enable-stdio-inheritance  --workers 3 --max-requests 2 --timeout 60 --bind unix:/run/logodetect.sock logo_detect_api.wsgi:application
 
 [Install]
 WantedBy=multi-user.target
