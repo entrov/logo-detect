@@ -2,24 +2,51 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12c46c7a-1aae-4364-91dd-100911d8240d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/logoDetect/task_list.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checkpoint_dir/checkpoint" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/checkpoint_dir/model.ckpt.data-00000-of-00001" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/checkpoint_dir/model.ckpt.index" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/checkpoint_dir/model.ckpt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tf_models/logo.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tf_models/logo.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tf_models/logo_test.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tf_models/logo_test.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/train/inception/classify_image_graph_def.pb" beforeDir="false" afterPath="$PROJECT_DIR$/train/inception/classify_image_graph_def.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoint_dir/model.ckpt.data-00000-of-00001" beforeDir="false" afterPath="$PROJECT_DIR$/checkpoint_dir/model.ckpt.data-00000-of-00001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoint_dir/model.ckpt.index" beforeDir="false" afterPath="$PROJECT_DIR$/checkpoint_dir/model.ckpt.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkpoint_dir/model.ckpt.meta" beforeDir="false" afterPath="$PROJECT_DIR$/checkpoint_dir/model.ckpt.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/install.sh" beforeDir="false" afterPath="$PROJECT_DIR$/install.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logoDetect/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/logo_detect_api/celery.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logoDetect/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/logoDetect/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logoDetect/retrain_logo.py" beforeDir="false" afterPath="$PROJECT_DIR$/logoDetect/retrain_logo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logoDetect/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/logoDetect/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logoDetect/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/logoDetect/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logo_detect_api/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/logo_detect_api/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logo_detect_api/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/logo_detect_api/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf_models/logo.pb" beforeDir="false" afterPath="$PROJECT_DIR$/tf_models/logo.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf_models/logo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tf_models/logo.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf_models/logo_test.pb" beforeDir="false" afterPath="$PROJECT_DIR$/tf_models/logo_test.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf_models/logo_test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tf_models/logo_test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/result.txt" beforeDir="false" afterPath="$PROJECT_DIR$/train/result.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/retrain_logs/train/events.out.tfevents.1650641489.ubuntu-s-1vcpu-1gb-intel-nyc1-logo-detect" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/retrain_logs/validation/events.out.tfevents.1650641495.ubuntu-s-1vcpu-1gb-intel-nyc1-logo-detect" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsbtTreeLayoutManager">
+    <layout place="tools.popupGrunt">
+      <scroll-view-position x="0" y="0" />
+    </layout>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -35,6 +62,15 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\sajja\PycharmProjects\logo-detect" />
+      <recent name="C:\Users\sajja\PycharmProjects\logo-detect\log" />
+      <recent name="C:\Users\sajja\PycharmProjects\logo-detect\logoDetect" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="logo-detect" type="Python.DjangoServer" factoryName="Django server">
@@ -74,7 +110,24 @@
       <workItem from="1650491682223" duration="2447000" />
       <workItem from="1650535315929" duration="5170000" />
       <workItem from="1650818469251" duration="2031000" />
-      <workItem from="1650825678269" duration="1958000" />
+      <workItem from="1650825678269" duration="2410000" />
+      <workItem from="1650831987148" duration="26000" />
+      <workItem from="1651009307992" duration="636000" />
+      <workItem from="1652249187034" duration="7778000" />
+      <workItem from="1652261209664" duration="1869000" />
+      <workItem from="1652263341720" duration="1984000" />
+      <workItem from="1652265456473" duration="149000" />
+      <workItem from="1652265657233" duration="3000" />
+      <workItem from="1652265835448" duration="336000" />
+      <workItem from="1652266414246" duration="11352000" />
+      <workItem from="1652279184105" duration="7169000" />
+      <workItem from="1652292221239" duration="2331000" />
+      <workItem from="1652419641403" duration="3243000" />
+      <workItem from="1652435107913" duration="580000" />
+      <workItem from="1652463638966" duration="816000" />
+      <workItem from="1652684708616" duration="5000" />
+      <workItem from="1652855912634" duration="162000" />
+      <workItem from="1652856094803" duration="86000" />
     </task>
     <servers />
   </component>
@@ -109,6 +162,31 @@
           <url>file://$PROJECT_DIR$/client.py</url>
           <line>193</line>
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/logoDetect/views.py</url>
+          <line>84</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/logoDetect/views.py</url>
+          <line>82</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/logoDetect/retrain_logo.py</url>
+          <line>686</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/logoDetect/retrain_logo.py</url>
+          <line>690</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/logoDetect/retrain_logo.py</url>
+          <line>778</line>
+          <option name="timeStamp" value="47" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
