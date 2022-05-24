@@ -199,7 +199,7 @@ def download_dataset(update_dataset):
     if update_dataset:
         s3 = boto3.resource(
                 service_name='s3',
-                region_name='us-east-2',
+                region_name='us-west-1',
                 aws_access_key_id='AKIAWAP6EWQETX26BL7S',
                 aws_secret_access_key='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'
                 )
