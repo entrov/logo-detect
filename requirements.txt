@@ -1,7 +1,7 @@
 django
 numpy
 Pillow
-tensorflow-cpu
+tensorflow-gpu
 opencv-python
 imutils
 djangorestframework
@@ -10,3 +10,4 @@ gunicorn
 psycopg2-binary
 dj-database-url
 boto3
+celery
