@@ -11,3 +11,10 @@ class TrainingResults(models.Model):
     is_completed = models.BooleanField(default=False)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+
+class DatasetDownloadResults(models.Model):
+    results =  models.CharField(max_length=10000,null=True,blank=True)
+    task_id = models.CharField(max_length=200)
+    is_completed = models.BooleanField(default=False)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)

@@ -9,4 +9,5 @@ urlpatterns = [
     path('celery_train_model/', views.CeleryTestTask.as_view(), name='celery_trainmodel'),
     path('check_status/', views.CheckTask.as_view(), name='celery_trainmodel_status'),
     path('update_dataset/', views.UpdateDatasetView.as_view(), name='updatedataset'),
+    path('check_dataset_download_status/', views.CheckDatasetDownloadTask.as_view(), name='celery_dataset_download_status'),
 ]

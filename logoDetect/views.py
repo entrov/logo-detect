@@ -2,6 +2,7 @@ import json
 import os
 
 from celery.result import AsyncResult
+from celery.worker.control import revoke
 from django.shortcuts import render
 
 # Create your views here.
@@ -14,8 +15,8 @@ import client
 from rest_framework.throttling import UserRateThrottle, AnonRateThrottle
 
 from logo_detect_api.settings import BASE_DIR
-from .models import TrainingResults
-from .task_list import APITask, add
+from .models import TrainingResults, DatasetDownloadResults
+from .task_list import APITask, add, DatasetDownloadTask
 
 import logging
 # Get an instance of a logger
@@ -77,8 +78,24 @@ class UpdateDatasetView(GenericAPIView):
         serializer = self.get_serializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         update_dataset = serializer.validated_data.get('update_dataset')
-        response = client.download_dataset(update_dataset)
-        return Response(response, status=status.HTTP_200_OK)
+
+        try:
+            previous_object = DatasetDownloadTask.objects.last()
+            task_id = previous_object.task_id
+            revoke(task_id, terminate=True)
+        except Exception as e:
+            pass
+
+        r = DatasetDownloadTask().delay(update_dataset=update_dataset)
+        # check if no object then create it
+        last_obj = DatasetDownloadResults.objects.create(task_id=r.task_id)
+        last_obj.save()
+        if update_dataset == True:
+            return Response(
+                {'message': 'Dataset downloading has been started. To check status please use the dataset task id {}.'.format(r.task_id)},
+            status=status.HTTP_200_OK)
+        else:
+            return Response({'message': 'Download dataset is unchecked'},status=status.HTTP_200_OK)
 
 class TrainModelView(GenericAPIView):
     permission_classes = [permissions.AllowAny]
@@ -108,6 +125,12 @@ class CeleryTestTask(GenericAPIView):
         testing_percentage = serializer.validated_data.get('testing_percentage')
         learning_rate = serializer.validated_data.get('learning_rate')
         delete_checkpoint = serializer.validated_data.get('delete_checkpoint')
+        try:
+            previous_object = TrainingResults.objects.last()
+            task_id = previous_object.task_id
+            revoke(task_id, terminate=True)
+        except Exception as e:
+            pass
         r = APITask().delay(how_many_training_steps=how_many_training_steps,testing_percentage=testing_percentage,learning_rate=learning_rate,delete_checkpoint=delete_checkpoint)
         # check if no object then create it
         last_obj = TrainingResults.objects.create(task_id=r.task_id)
@@ -134,6 +157,28 @@ class CheckTask(GenericAPIView):
                 with open(os.path.join(BASE_DIR,'celery.log'), 'r') as f:
                     last_line = f.readlines()[-1]
                 return Response({'message': 'Training is continue please check a few minutes later', "log": last_line},
+                                status=status.HTTP_200_OK)
+        else:
+            return Response({'message': 'No a valid task id'}, status=status.HTTP_200_OK)
+
+class CheckDatasetDownloadTask(GenericAPIView):
+    permission_classes = [permissions.AllowAny]
+    serializer_class = TrainModelResult
+
+    def post(self, request, *args, **kwargs):
+        serializer = self.get_serializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        status_id = serializer.validated_data.get('task_id',None)
+        task = AsyncResult(status_id)
+        last_obj = DatasetDownloadResults.objects.get(task_id=status_id)
+        if last_obj:
+            if last_obj.is_completed:
+                if last_obj.results != None:
+                    return Response({'results': last_obj.results}, status=status.HTTP_200_OK)
+                else:
+                    return Response({'message':'Error in downloading the dataset check log file for details'}, status=status.HTTP_200_OK)
+            elif not last_obj.is_completed:
+                return Response({'message': 'Dataset downloading is continue please check a few minutes later'},
                                 status=status.HTTP_200_OK)
         else:
             return Response({'message': 'No a valid task id'}, status=status.HTTP_200_OK)

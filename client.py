@@ -3,6 +3,7 @@ Client side code to perform a single API call to a tensorflow model up and runni
 """
 import argparse
 import json
+import logging
 import os
 from django.core.files.storage import default_storage
 from django.core.files.base import ContentFile
@@ -26,7 +27,7 @@ import shutil
 import logoDetect.retrain_logo as retrain_logo
 
 import boto3
-
+logger = logging.getLogger('celery')
 
 def get_random_alphaNumeric_string(stringLength=4):
     lettersAndDigits = string.ascii_letters + string.digits
@@ -217,12 +218,13 @@ def download_dataset(update_dataset):
                 try:
                     object = my_bucket.Object(object_summary.key)
                     object.download_file(os.path.join(sub_dir, object_summary.key.split("/")[-1]))
-                except:
+                except Exception as e:
+                    logger.info(e)
                     pass
             else:
                 pass
     
-    return "dataset updated!"
+    return "dataset successfully updated!"
 
 def train_model(how_many_training_steps, testing_percentage, learning_rate, delete_checkpoint):
     dest_directory = f"train"
