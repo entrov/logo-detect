@@ -1,11 +1,12 @@
 #!/bin/bash
 
 #can be modified accordingly
-SERVER_IP=178.128.153.108
+SERVER_IP=52.1.204.245
+# shellcheck disable=SC2034
 CURRENTDIR=$(pwd)
 WorkingDirectory=$(pwd)
 ENV_NAME='venv'
-WHOAMI=`whoami`
+WHOAMI='logodetect'
 
 # 1. Install python and nginx
 sudo apt update -y
@@ -25,6 +26,7 @@ echo 'setup virtualenv'
 python3 -m venv $WorkingDirectory/$ENV_NAME
 
 # 3. Activate virtual_environment and make migrations
+# shellcheck disable=SC1090
 source $WorkingDirectory/$ENV_NAME/bin/activate
 pip install -U pip
 pip install -r requirements.txt

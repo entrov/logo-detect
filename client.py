@@ -3,7 +3,6 @@ Client side code to perform a single API call to a tensorflow model up and runni
 """
 import argparse
 import json
-import logging
 import os
 from django.core.files.storage import default_storage
 from django.core.files.base import ContentFile
@@ -27,8 +26,10 @@ import shutil
 import logoDetect.retrain_logo as retrain_logo
 
 import boto3
-logger = logging.getLogger('celery')
 
+os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+config=tf.compat.v1.ConfigProto(log_device_placement=True,allow_soft_placement=True)
+config.gpu_options.visible_device_list = '0'
 def get_random_alphaNumeric_string(stringLength=4):
     lettersAndDigits = string.ascii_letters + string.digits
     return ''.join((random.choice(lettersAndDigits) for i in range(stringLength)))
@@ -174,7 +175,7 @@ def tf_face_predictor(label_lines, image_data, threshold, im_resize):
     res_arr = []
     scores = []
     id_string = []
-    with tf.compat.v1.Session() as sess:
+    with tf.compat.v1.Session(config=config) as sess:
         # Feed the image_data as input to the graph and get first prediction
         softmax_tensor = sess.graph.get_tensor_by_name('final_result:0')
 
@@ -208,7 +209,7 @@ def download_dataset(update_dataset):
 
         for object_summary in my_bucket.objects.filter(Prefix="dataset/"):
         #     print(object_summary.key.split("/")[0])
-        
+
             sub_dir = os.path.join("train", os.path.join(object_summary.key.split("/")[0],object_summary.key.split("/")[1]))
             if not os.path.exists(object_summary.key.split("/")[0]):
                 os.makedirs(object_summary.key.split("/")[0])
@@ -218,13 +219,12 @@ def download_dataset(update_dataset):
                 try:
                     object = my_bucket.Object(object_summary.key)
                     object.download_file(os.path.join(sub_dir, object_summary.key.split("/")[-1]))
-                except Exception as e:
-                    logger.info(e)
+                except:
                     pass
             else:
                 pass
-    
-    return "dataset successfully updated!"
+
+    return "dataset updated!"
 
 def train_model(how_many_training_steps, testing_percentage, learning_rate, delete_checkpoint):
     dest_directory = f"train"
